@@ -2,8 +2,6 @@ import java.util.*;
 public class SlotMachine {
 
     private int [] slot1, slot2, slot3;
-
-
     int counter;
     private Random rand;
 
@@ -28,7 +26,13 @@ public class SlotMachine {
     }
 
     public boolean isWinner() {
-        if(slot[0] == slot[1] && slot[0] == slot[2]) {
+        if(slot1[0] == slot1[1] && slot1[0] == slot1[2]) {
+            counter++;
+            return true;
+        }   if(slot2[0] == slot2[1] && slot2[0] == slot2[2]) {
+            counter++;
+            return true;
+        }   if(slot3[0] == slot3[1] && slot3[0] == slot3[2]) {
             counter++;
             return true;
         }
