@@ -1,3 +1,7 @@
+//Oscar Maldonado
+//CS111
+//Tatiana Morris
+//1/9/2022
 public class Play3000SlotMachines {
     public static void main (String[] args) {
         int counter = 0;

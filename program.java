@@ -1,3 +1,7 @@
+//Oscar Maldonado
+//CS111
+//Tatiana Morris
+//1/9/2022
 import java.lang.Math;
 public class program {
     //this method calculates the area of a circle

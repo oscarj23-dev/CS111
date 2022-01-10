@@ -1,3 +1,7 @@
+//Oscar Maldonado
+//CS111
+//Tatiana Morris
+//1/9/2022
 import java.util.*;
 public class SlotMachine {
     private int [] slot1, slot2, slot3;
