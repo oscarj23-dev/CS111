@@ -12,6 +12,8 @@ public class SlotMachine {
         boolean win = isWinner();
     }
     
+    //this method acts as the slot machine, populating 3 arrays of size 3 with random 
+    //ints between 0 and 9.
     public void gambleMachine() {
         for(int i = 0; i < slot1.length; i++) {
             slot1[i] = rand.nextInt(10);
@@ -24,6 +26,8 @@ public class SlotMachine {
         System.out.println(Arrays.toString(slot3));
     }
 
+    //this method determines which of the arrays are winners through a simple 'if' 
+    //chain comparing the elements to eachother.
     public boolean isWinner() { 
         if(slot1[0] == slot1[1] && slot1[0] == slot1[2]) {
             return true;

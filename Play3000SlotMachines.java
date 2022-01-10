@@ -14,6 +14,5 @@ public class Play3000SlotMachines {
                 System.out.println("from 3000 Slot Machines, " + winCounter + " were winners.");
             }
         }
-        
     }
 } 
