@@ -20,9 +20,6 @@ public class SlotMachine {
             slot2[i] = rand.nextInt(10);
             slot3[i] = rand.nextInt(10);
         }
-        System.out.println(Arrays.toString(slot1));
-        System.out.println(Arrays.toString(slot2));
-        System.out.println(Arrays.toString(slot3));
     }
 
     public boolean isWinner() {
