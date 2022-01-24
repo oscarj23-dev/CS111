@@ -8,7 +8,8 @@ public class Robot {
 
     public Robot() {
         numRobots++;
-        serialID = "Johnny" + r.nextInt(99999);
+        r = new Random();
+        serialID = "Johnny" + r.nextInt(99999) + " ";
         robotHead = new RobotHead();
         robotTorso = new RobotTorso();
     }
@@ -26,13 +27,16 @@ public class Robot {
     }
     
     public boolean equals(Robot aRobot) {
-        return false;
+        boolean cond = true;
+        if(serialID.equals(aRobot.getSerialID())) {
+            return cond;
+        } else {
+            return !cond;
+        }
     }
 
     public String toString() {
-        String output = "number of robots: " + numRobots; 
-        System.out.println(output);
-        return output;
+        return "Serial ID: " + serialID + robotHead.toString() + robotTorso.toString() + " ";
     }
 
     public Robot copy() {
@@ -40,5 +44,4 @@ public class Robot {
         robotCopy.setSerialID(serialID);
         return robotCopy;
     }
-
 }

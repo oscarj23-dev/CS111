@@ -5,13 +5,11 @@ public class RobotHead {
     private String [] colors = {"blue", "yellow", "evil red", "creepy green", "muddy brown"};
 
     public RobotHead() {
+        r = new Random();
         eyeColor = colors[r.nextInt(5)];
     }
 
     public String toString() {
-        String output = "eye color: " + eyeColor; 
-        System.out.println(output);
-        return output;
+        return "eye color: " + eyeColor + " "; 
     }
-
 }
