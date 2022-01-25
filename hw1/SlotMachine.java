@@ -1,3 +1,7 @@
+//Oscar Maldonado
+//Tatiana Morris
+//1/9/22
+//CS111
 import java.util.*;
 public class SlotMachine {
 
@@ -14,6 +18,7 @@ public class SlotMachine {
         boolean win = isWinner();
     }
     
+    //fills all three arrays with random numbers 1-9
     public void gambleMachine() {
         for(int i = 0; i < slot1.length; i++) {
             slot1[i] = rand.nextInt(10);
@@ -22,6 +27,7 @@ public class SlotMachine {
         }
     }
 
+    //determines if a slot is a winner through an if chain and returns true if it is.
     public boolean isWinner() {
         if(slot1[0] == slot1[1] && slot1[0] == slot1[2]) {
             counter++;
