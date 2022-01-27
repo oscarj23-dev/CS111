@@ -14,15 +14,17 @@ public class PoliceOfficer {
 
     public ParkingTicket patrol(ParkedCar car, ParkingMeter meter) {
         if(meter.getMinutes() > car.getMinutes()) {
-            PoliceOfficer officer = new PoliceOfficer("John doe", "4788");
-            ParkingTicket tic = new ParkingTicket(car, officer, meter.getMinutes());
+            PoliceOfficer officer = new PoliceOfficer(name, badgeNumber);
+            PoliceOfficer cop = new PoliceOfficer(officer);
+            ParkingTicket tic = new ParkingTicket(car, cop, meter.getMinutes());
             return tic;
         } else {
+            System.out.println("No violation");
             return null;
         }
     }
 
     public String toString() {
-        return "officer data: \nname: " + name + "\nBadgeNumber: " + badgeNumber;
+        return "Officer Data: \nname: " + name + "\nBadgeNumber: " + badgeNumber;
     }
 }
