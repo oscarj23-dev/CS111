@@ -4,7 +4,7 @@
 //1/9/2022
 import java.lang.Math;
 public class program {
-    //this method calculates the area of a circle
+//this method calculates the area of a circle
     public void area(double r) {
         double circle = Math.PI * Math.pow(r, 2);
         System.out.println("the area of the circle is " + Math.round(circle * 100.0)/100.0 + 
