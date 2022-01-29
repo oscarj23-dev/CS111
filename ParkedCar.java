@@ -51,10 +51,10 @@ public class ParkedCar {
     }
 
     public String toString() {
-        return "Car Data\nMake " + make + "\n" +
+        return "Car Data:\nMake: " + make + "\n" +
         "model: " + model + "\n" +
         "color: " + color + "\n" +
-        "license number " + licenseNumber + "\n" +
+        "license number: " + licenseNumber + "\n" +
         "Minutes Parked: " + minutesParked;    
     }
 

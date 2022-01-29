@@ -21,17 +21,17 @@ public class ParkingTicket {
     }
 
     public void calculateFine() {
-        if(minutes < car.getMinutes()) {
+        if(car.getMinutes() > minutes) {
             fine += baseFine;
-            if ((car.getMinutes() - minutes) / 60.0 > 0.0) {
+            if ((car.getMinutes() - minutes) / 60.0 > 1.0) {
                 double time = Math.ceil((car.getMinutes() - minutes) / 60.0);
-                fine += time * fine;
+                fine += hourlyFine;
             }
         } 
     }
 
-    public String toStrng() {
-        return "Ticket Data: \nMinutes Illegally parked: " + (car.getMinutes() - minutes) + "\nFine: "
+    public String toString() {
+        return "Ticket Data: \nMinutes Illegally parked: " + (car.getMinutes() - minutes) + "\nFine: $"
         + fine;
     }
 

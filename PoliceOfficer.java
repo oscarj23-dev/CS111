@@ -13,13 +13,15 @@ public class PoliceOfficer {
     }
 
     public ParkingTicket patrol(ParkedCar car, ParkingMeter meter) {
-        if(meter.getMinutes() > car.getMinutes()) {
+        if(meter.getMinutes() < car.getMinutes()) {
             PoliceOfficer officer = new PoliceOfficer(name, badgeNumber);
             PoliceOfficer cop = new PoliceOfficer(officer);
-            ParkingTicket tic = new ParkingTicket(car, cop, meter.getMinutes());
+            int minutes = meter.getMinutes();
+            ParkingTicket tic = new ParkingTicket(car, cop, minutes);
             return tic;
         } else {
             System.out.println("No violation");
+            System.out.println("");
             return null;
         }
     }
