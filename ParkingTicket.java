@@ -25,7 +25,7 @@ public class ParkingTicket {
             fine += baseFine;
             if ((car.getMinutes() - minutes) / 60.0 > 1.0) {
                 double time = Math.ceil((car.getMinutes() - minutes) / 60.0);
-                fine += hourlyFine;
+                fine += time * hourlyFine;
             }
         } 
     }
