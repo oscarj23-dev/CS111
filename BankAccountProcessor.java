@@ -14,8 +14,9 @@ public class BankAccountProcessor {
                 while(scan.hasNextLine()) {
                     BankAccountException.isValid(scan.nextLine());
                 }
-            }  catch(BankAccountException e) {
-                
+                runProgram = false;
+            }   catch(BankAccountException e) { 
+                System.out.println("An exception happened, would you like to continue?");
             }
         }
     }
