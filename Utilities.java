@@ -1,4 +1,4 @@
-
+    
 import java.util.StringTokenizer;
 
 public class Utilities {
@@ -42,5 +42,6 @@ public class Utilities {
         System.out.println("  pick up    - pick up an item (another question will display)");
         System.out.println("  drop       - drop an item (another question will display)");
         System.out.println("  help       - this menu.");
+        System.out.println("  sleep      - this puts the player to sleep and ends the game, (sleepRoom only)");
     }
 }

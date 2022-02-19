@@ -21,6 +21,7 @@ public class Room {
     }
 
     public int playRoom(Player player) {
+        //System.out.println(getNextRoom(player));
         return getNextRoom(player);
     }
 
