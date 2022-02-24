@@ -15,19 +15,20 @@ public class BankAccountProcessor {
                 while(scan.hasNextLine()) {
                     isValid(scan.nextLine());
                 }
-            }   catch(BankAccountException e) { 
+            } catch(BankAccountException e) { 
                 System.out.println(e.getMessage());
                 System.out.print("Would you like to continue? ");
                 String answer = console.nextLine();
+
                 if(answer.startsWith("n") || answer.startsWith("N")) {
                     runProgram = false;
                 } else {
                     runProgram = true;
                 }
             }
-            //System.out.println("end of while loop");
         }
     }
+    
     public static boolean isValid(String accountLine) throws BankAccountException {
         int count = 0;
         int count2 = 0;
