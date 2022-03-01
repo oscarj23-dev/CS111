@@ -7,10 +7,12 @@ public abstract class Quadrilateral extends Shape {
         this.width = width;
     }
     
+    //returns height of quadrilateral
     public double getHeight() {
         return height;
     }
 
+    //returns width of quadrilateral
     public double getWidth() {
         return width;
     }

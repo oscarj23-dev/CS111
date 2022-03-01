@@ -4,6 +4,7 @@ public class Square extends Rectangle {
         super(height, width);
     }
 
+    //returns type of object as string
     public String getShapeType() {
         return "Square";
     }
